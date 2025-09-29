@@ -8,14 +8,14 @@ public class Ej1_3 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        double num1 = 0;
-        double num2 = 0;
+        int num1 = 0;
+        int num2 = 0;
 
         try {
             num1 = sc.nextInt();
             num2 = sc.nextInt();
 
-            double resultado = num1 + num2;
+            int resultado = num1 + num2;
             System.out.print("El resultado es: " + resultado);
 
         } catch (Exception e) {
