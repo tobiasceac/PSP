@@ -1,6 +1,6 @@
 package Tema1.EjerciciosRA1;
 
-public class Ejercicio1 {
+public class Ej1 {
     public static void main(String[] args) {
         int num = 10;
 

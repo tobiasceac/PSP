@@ -20,8 +20,8 @@ public class Ej1_3V2 {
 
 
         OutputStream os = p.getOutputStream();
-        os.write("100".getBytes());
-        os.write("60".getBytes());
+        os.write("100 \n".getBytes());
+        os.write("60 \n".getBytes());
         os.flush();
         os.close();
 
@@ -36,9 +36,9 @@ public class Ej1_3V2 {
         catch (Exception e){
             e.printStackTrace();
         }
-        int exitVal;
+
         try {
-            exitVal = p.waitFor();
+           int exitVal = p.waitFor();
             System.out.println("\n Valor de salida: " + exitVal);
         }
         catch (Exception e){
