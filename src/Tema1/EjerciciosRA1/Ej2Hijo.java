@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Ej2Hijo {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         int numero = sc.nextInt();
         int res = numero * 2;

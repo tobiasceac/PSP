@@ -11,14 +11,9 @@ public class Ej3Padre {
         System.out.print("Manda una peticion para recibir un numero aleatorio: ");
         String peticion = sc.next();
 
-        Path pa = Path.of("out", "production", "PSP");
-        File fi = new File(pa.toString());
-        ProcessBuilder pb = new ProcessBuilder("java", "Tema1.EjerciciosRA1.Ej2Hijo");
+        ProcessBuilder pb = new ProcessBuilder("java", "-cp", ".", "Tema1.EjerciciosRA1.Ej3Hijo");
 
-        pb.directory(fi);
         Process p = pb.start();
-
-
 
         try(BufferedReader salida = new BufferedReader(new InputStreamReader(p.getInputStream()))){
             OutputStream os = p.getOutputStream();
@@ -27,6 +22,7 @@ public class Ej3Padre {
                 pw.println(peticion);
                 String resultado = salida.readLine();
                 System.out.println("El resultado es: "+ resultado);
+                System.out.print("Manda una peticion para recibir un numero aleatorio: ");
                 peticion = sc.next();
             }
         }

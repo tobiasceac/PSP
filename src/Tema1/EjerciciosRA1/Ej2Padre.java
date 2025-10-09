@@ -11,12 +11,8 @@ public class Ej2Padre {
         System.out.print("Introduce un número: ");
         int numero = sc.nextInt();
 
-        Path pa = Path.of("out", "production", "PSP");
-        File fi = new File(pa.toString());
+        ProcessBuilder pb = new ProcessBuilder("java","-cp", ".", "Tema1.EjerciciosRA1.Ej2Hijo");
 
-        ProcessBuilder pb = new ProcessBuilder("java", "Tema1.EjerciciosRA1.Ej2Hijo");
-
-        pb.directory(fi);
         Process p = pb.start();
 
         OutputStream os = p.getOutputStream();

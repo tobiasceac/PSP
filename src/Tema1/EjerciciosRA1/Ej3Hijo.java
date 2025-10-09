@@ -11,6 +11,7 @@ public class Ej3Hijo {
             int random = (int) (Math.random() * 10);
             System.out.println(random);
             System.out.flush();
+            peticion = sc.next();
         }
     }
 }
