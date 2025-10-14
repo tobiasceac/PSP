@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class Ej4 {
     public static void main(String[] args) throws IOException {
+        ProcessBuilder pb = new ProcessBuilder("java", "-cp", ".", "Tema1.EjerciciosRA1.Ej4");
+
         Scanner sc = new Scanner(System.in);
 
         System.out.println("1. Apagar");
@@ -19,7 +21,6 @@ public class Ej4 {
         System.out.println("¿Tiempo?");
         int time = sc.nextInt();
 
-        ProcessBuilder pb = new ProcessBuilder();
         try {
             if (os != 1 && os != 2) {
                 System.out.println("Sistema operativo no encontrado");

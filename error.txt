@@ -1,2 +1,2 @@
-Error: no se ha encontrado o cargado la clase principal EjemploLectura
-Causado por: java.lang.ClassNotFoundException: EjemploLectura
+Error: Could not find or load main class EjemploLectura
+Caused by: java.lang.ClassNotFoundException: EjemploLectura
