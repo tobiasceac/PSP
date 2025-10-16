@@ -5,9 +5,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.Path;
 
+
 public class Ej6 {
     public static void main(String[] args) throws IOException {
-        Path file = Path.of("/Users", "tobias", "IdeaProjects", "PSP", "src", "Tema1", "EjerciciosRA1", "Ej6", "texto2.txt");
+
+        Path file = Path.of("Tema1", "EjerciciosRA1", "Ej6", "texto2.txt").toAbsolutePath();
         String fileString = file.toString();
 
         ProcessBuilder pba = new ProcessBuilder("java", "-cp", ".", "Tema1.EjerciciosRA1.Ej6.Ej6a", fileString);
@@ -15,6 +17,7 @@ public class Ej6 {
         ProcessBuilder pbi = new ProcessBuilder("java", "-cp", ".", "Tema1.EjerciciosRA1.Ej6.Ej6i", fileString);
         ProcessBuilder pbo = new ProcessBuilder("java", "-cp", ".", "Tema1.EjerciciosRA1.Ej6.Ej6o", fileString);
         ProcessBuilder pbu = new ProcessBuilder("java", "-cp", ".", "Tema1.EjerciciosRA1.Ej6.Ej6u", fileString);
+
 
         Process ppba = pba.start();
         Process ppbe = pbe.start();
