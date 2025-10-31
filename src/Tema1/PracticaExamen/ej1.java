@@ -9,12 +9,10 @@ import java.nio.file.Path;
 public class ej1 {
     public static void main(String[] args) throws IOException {
 
-        // Windows  \
-        Path file = Path.of("Tema1", "PracticaExamen", "Recursos", "texto.txt").toAbsolutePath();
+        Path file = Path.of("Tema1", "PracticaExamen", "Recursos", "Tema1/PracticaExamen/Recursos/texto.txt").toAbsolutePath();
         String Sfile = file.toString();
 
-
-        ProcessBuilder pb = new ProcessBuilder("java", "-cp", ".", "Tema1.PracticaExamen.ej1Hijo",  Sfile);
+        ProcessBuilder pb = new ProcessBuilder("Java", "-cp", ".", "Tema1.PracticaExamen.ej1Hijo",  Sfile);
 
         Process p = pb.start();
 
